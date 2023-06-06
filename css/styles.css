@@ -1,8 +1,14 @@
 :root {
   --light-red: hsl(0, 100%, 67%);
-  --orangey-yellow: hsl(39, 100%, 56%);
+  --orange-yellow: hsl(39, 100%, 56%);
   --green-teal: hsl(166, 100%, 37%);
   --cobalt-blue: hsl(234, 85%, 45%);
+  --slate-blue: hsl(252, 100%, 67%);
+  --royal-blue: hsl(241, 81%, 54%);
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --ligth-lavender: hsl(241, 100%, 89%);
+  --gray-blue: hsl(224, 30%, 27%);
 }
 
 body {
@@ -12,6 +18,95 @@ body {
   font-size: 18px;
   font-family: "Hanken Grotesk", sans-serif;
 }
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.result-card {
+  border: 5px solid black;
+  min-width: 600px;
+  height: 55vh;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+
+.result-content-one {
+  text-align: center;
+  width: 300px;
+  background-color: var(--cobalt-blue);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.paragraf-one {
+  color: var(--slate-blue);
+  font-size: 1.4rem;
+}
+
+.result-content-two {
+  border: 2px solid tomato;
+  width: 300px;
+  text-align: center;
+  margin: 10px 30px;
+}
+
+.result-summary-reaction {
+  display: flex;
+  justify-content: space-between;
+  background-color: aquamarine;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.result-summary-memory {
+  display: flex;
+  justify-content: space-between;
+  background-color: tomato;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.result-summary-verbal {
+  display: flex;
+  justify-content: space-between;
+  background-color: cadetblue;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.result-summary-visual {
+  display: flex;
+  justify-content: space-between;
+  background-color: chartreuse;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.paragraf-summary-reaction,
+.paragraf-summary-memory,
+.paragraf-summary-verbal,
+.paragraf-summary-visual {
+  display: flex;
+  margin-left: 0.5rem;
+}
+
+.result-summary-button {
+  background-color: var(--gray-blue);
+  padding: 0.5rem 7rem;
+  border-radius: 20px;
+  color: var(--white);
+  text-decoration: none;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
