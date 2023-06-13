@@ -27,18 +27,19 @@ body {
 }
 
 .result-card {
-  border: 5px solid black;
+  border: none;
   min-width: 600px;
   height: 55vh;
   display: flex;
   justify-content: space-between;
   border-radius: 15px;
+  box-shadow: 4px 3px 5px 2px #000000;
 }
 
 .result-content-one {
   text-align: center;
   width: 300px;
-  background-color: var(--cobalt-blue);
+  background-color: var(--royal-blue);
   border-radius: 10px;
   padding: 10px;
 }
@@ -48,47 +49,91 @@ body {
   font-size: 1.4rem;
 }
 
+.result-paragraf-two {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: var(--cobalt-blue);
+  box-shadow: 15px 15px 31px #32149d, -15px -15px 31px #441cd5;
+}
+
+.paragraf-two {
+  font-size: 3.5rem;
+  margin: 0;
+  padding-top: 1.8rem;
+  color: var(--white);
+}
+
+.paragraf-two-next {
+  font-size: 0.8rem;
+  margin: 0;
+  color: var(--ligth-lavender);
+}
+
+.paragraf-three {
+  font-size: 1.8rem;
+  margin: 0;
+  padding-top: 1.5rem;
+  color: var(--white);
+}
+
+.paragraf-four {
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  color: var(--ligth-lavender);
+}
+
 .result-content-two {
-  border: 2px solid tomato;
   width: 300px;
   text-align: center;
   margin: 10px 30px;
 }
 
+.result-title {
+  text-align: start;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 .result-summary-reaction {
   display: flex;
   justify-content: space-between;
-  background-color: aquamarine;
   font-size: 15px;
   border-radius: 10px;
   margin-bottom: 10px;
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.2);
 }
 
 .result-summary-memory {
   display: flex;
   justify-content: space-between;
-  background-color: tomato;
   font-size: 15px;
   border-radius: 10px;
   margin-bottom: 10px;
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.2);
 }
 
 .result-summary-verbal {
   display: flex;
   justify-content: space-between;
-  background-color: cadetblue;
   font-size: 15px;
   border-radius: 10px;
   margin-bottom: 10px;
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.2);
 }
 
 .result-summary-visual {
   display: flex;
   justify-content: space-between;
-  background-color: chartreuse;
   font-size: 15px;
   border-radius: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 0.2);
 }
 
 .paragraf-summary-reaction,
@@ -97,6 +142,21 @@ body {
 .paragraf-summary-visual {
   display: flex;
   margin-left: 0.5rem;
+}
+
+.paragraf-summary-reaction,
+.paragraf-summary-memory,
+.paragraf-summary-verbal,
+.paragraf-summary-visual,
+img {
+  margin-right: 0.5rem;
+}
+
+.paragraf-reaction,
+.paragraf-memory,
+.paragraf-verbal,
+.paragraf-visual {
+  margin-right: 0.5rem;
 }
 
 .result-summary-button {
@@ -113,4 +173,19 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 680px) {
+  .result-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 90vh;
+  }
+
+  .result-title {
+    margin: 0;
+  }
 }
